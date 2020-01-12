@@ -1,0 +1,88 @@
+# add file to staging
+git add <filename>
+
+# add all file to staging
+git add .
+git add -A
+
+# git commit
+git commit -m "commiting the changes to local repo"
+
+#git add and commit
+git commit -am "add and commit all the things"
+
+#unstage a file from staging 
+git reset <filename>
+git reset
+git reset --hard (this restore the deleted file)
+
+#to restore the files before adding them to staging
+git restore .
+
+#to restore the files before adding them to staging
+git restore --staged .
+git restore --staged *
+
+# git remove - this remove a file from working tree and staging
+git fm <filename>
+
+# get list of all branches, current one will be marked with the * character
+git branch
+
+# get list of all branches(local & remote), current one will be marked with the * character
+git branch -a
+
+# create new branch called branch_name
+git branch branch_name
+
+# switch to existing branch called branch_name
+git checkout branch_name
+
+# create and checkout to just created branch, called branch_name
+git checkout -b branch_name
+
+# rename brunch called old_name to new_name
+git branch -m old_name new_name
+
+# rename current branch to new_name
+git branch -m new_name
+
+# remove local branch called branch_name
+git branch -d branch_name
+
+# remove local branch called branch_name forcefully (even there are uncommited changes)
+git branch -D branch_name
+
+# delete the remote after deleting the local repository
+git push origin --delete develop
+
+# push local branch called branch_name to remote repository
+git push --set-upstream origin branch_name
+git push --set-upstream https://github.com/sha3010/StreamServe.git
+# or
+git push -u origin branch_name
+
+
+# merge local branch called branch_name into your current branch
+git merge branch_name
+
+# git history of all commits
+git log
+git log --oneline
+
+
+
+#VI Editor commands
+#to create a file or open an existing
+vi <filename>
+
+#to see the contents of the file
+cat <filename>
+
+Press i to enter insert mode
+Press Esc to enter command mode
+While in Command mode , 
+	press :wq to save and quit
+	press :w to save & keep the file open
+	press :q to quit without saving
+	
