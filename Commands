@@ -85,4 +85,14 @@ While in Command mode ,
 	press :wq to save and quit
 	press :w to save & keep the file open
 	press :q to quit without saving
-	
+
+
+#Resolve Conflicts
+If you're already in conflicted state, and you want to just accept all of theirs:
+
+git checkout --theirs . (the branch which is getting not checkedout)
+git add .
+If you want to do the opposite:
+
+git checkout --ours .  (the current checkedout branch)
+git add .
